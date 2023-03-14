@@ -1,11 +1,11 @@
 class Game {
     constructor() {
-        this.playerOne = new Player (1,);
-        this.playerTwo = new Player(1,);
+        this.playerOne = new Player (1, "rock");
+        this.playerTwo = new Player(1,"scissors");
         this.winner = false;
         this.draw = false;
         this.gameData = []
-        this.currentPlayer = playerOne
+        this.currentPlayer = this.playerOne
     }
     checkWin() {
         if (this.playerOne.token === "rock" && this.playerTwo.token === "scissors") {
@@ -24,10 +24,10 @@ class Game {
     }
 
     switchPlayer() {
-        if (this.currentPlayer === playerOne) {
-            this.currentPlayer = playerTwo
+        if (this.currentPlayer === this.playerOne) {
+            this.currentPlayer = this.playerTwo
         } else {
-            this.currentPlayer = playerOne
+            this.currentPlayer = this.playerOne
         }
     }
 
