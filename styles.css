@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    border: 1px solid limegreen;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section,
+.right-section{
+    border: 1px solid limegreen;
+    width: 25vw;
+    height: 100vh;
+}
