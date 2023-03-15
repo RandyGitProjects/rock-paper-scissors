@@ -1,7 +1,7 @@
 class Game {
     constructor() {
-        this.playerOne = new Player (1, "rock");
-        this.playerTwo = new Player(1,"scissors");
+        this.playerOne = new Player (1,);
+        this.playerTwo = new Player(2,);
         this.winner = false;
         this.draw = false;
         this.gameData = []
@@ -26,8 +26,10 @@ class Game {
     switchPlayer() {
         if (this.currentPlayer === this.playerOne) {
             this.currentPlayer = this.playerTwo
+            console.log("player 2's turn")
         } else {
             this.currentPlayer = this.playerOne
+            console.log("player 1's turn")
         }
     }
 
